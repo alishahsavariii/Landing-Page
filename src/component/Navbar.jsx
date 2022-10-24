@@ -1,15 +1,24 @@
 import { useState } from "react";
 import "../index.css";
 import logo from "../assets/logo.svg"
+import MobilNavBar from "./MobileNavBar";
+import MainNavBar from "./MainNavBar";
+
 
 const Navbar = () => {
   const [show, setShow] = useState(null);
+
+  const closeMenu = () => setShow(false)
+  
+
   return (
     <>
-      <nav className="mx-auto p-4 bg-amber-400">
+      <nav className="mx-auto p-4 bg-amber-400 w-full">
         <div
           className="
-          
+          lg:border-b-4
+          border-teal-800
+          w-full
             container
             mx-auto
             flex
@@ -36,16 +45,17 @@ const Navbar = () => {
         transition-opacity
         "
           >
-            <img src={logo} width="200px" height="10px"/>
+            <img src={logo} width="200px" className="w-36 md:w-64 lg:w-72"/>
           
           </a>
 
           <button
-            onClick={() => {
-              setShow(!show);
-            }}
+            onClick={() => { setShow(!show)}}
             className="
         lg:hidden
+        hover:-translate-y-1
+         hover:scale-110
+         transition ease-in-out delay-25
         focus:outline-none
         focus-visible:ring-2
         ring-neutral-900
@@ -54,7 +64,7 @@ const Navbar = () => {
         ring-offset-amber-400
         text-neutral-900
         hover:text-neutral-500
-        transition-colors
+        
         "
           >
             <svg
@@ -72,123 +82,15 @@ const Navbar = () => {
               />
             </svg>
           </button>
-
-          {show ? (
-            <div
-              role="menubar"
-              className="
-        z-40
-        w-full
-        flex  
-        justify-between 
-        flex-col  
-        lg:flex-col
-        pt-24
-        gap-8
-        absolute
-        right-0
-        left-0
-        top-16
-        bg-amber-400
-        shadow-xl
-        text-center
-        text-lg
-        p-6
-        items-center
-        lg:static
-        lg:shadow-none
-        lg:justify-between
-        lg:w-full
-        "
-            >
-              <a
-                href="/"
-                role="menuitem"
-                className="
-        py-1
-        px-6
-        dark:text-neutral-900
-        focus:outline-none
-        focus-visible:ring-2
-        ring-neutral-900
-        rounded-md
-        text-neutral-900
-        hover:text-white
-        hover:bg-teal-900
-        transition-colors"
-              >
-                Home
-              </a>
-              <a
-                href="/"
-                role="menuitem"
-                className="
-             
-             
-          py-1
-          px-6
-          dark:text-neutral-900
-          focus:outline-none
-        focus-visible:ring-2
-        ring-neutral-900
-        rounded-md
-        ring-offset-4
-        ring-offset-amber-400
-        text-neutral-900
-        hover:text-white
-        hover:bg-teal-900
-        transition-colors
-        "
-              >
-                Contact
-              </a>
-              <a
-                href="/"
-                role="menuitem"
-                className="
-          py-1
-          px-6
-          dark:text-neutral-900
-          focus:outline-none
-        focus-visible:ring-2
-        ring-neutral-900
-        rounded-md
-        ring-offset-4
-        ring-offset-amber-400
-        text-neutral-900
-        hover:text-white
-        hover:bg-teal-900
-        transition-colors"
-              >
-                Login
-              </a>
-              <a
-                href="/"
-                role="menuitem"
-                className="
-          py-1
-          px-6
-          dark:text-neutral-900
-          focus:outline-none
-        focus-visible:ring-2
-        ring-neutral-900
-        rounded-md
-        ring-offset-4
-        ring-offset-amber-400
-        text-neutral-900
-        hover:text-white
-        hover:bg-teal-900
-        transition-colors"
-              >
-                Sign Up
-              </a>
-            </div>
-          ) : null}
+<MainNavBar />
+          {show && <MobilNavBar isMobile={true} closeMenu={closeMenu} />}
         
         </div>
       </nav>
+  
     </>
-  );
+);
+  
 };
 
 export default Navbar;
