@@ -3,7 +3,7 @@ import "../index.css";
 import logo from "../assets/logo.svg"
 
 const Navbar = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(null);
   return (
     <>
       <nav className="mx-auto p-4 bg-amber-400">
@@ -21,7 +21,6 @@ const Navbar = () => {
             href="/"
             aria-label="Go to homepage"
             className="
-            
         focus:outline-none
        focus-visible:ring-2
         ring-neutral-900
@@ -35,7 +34,6 @@ const Navbar = () => {
         z-50 
         hover:opacity-75
         transition-opacity
-        
         "
           >
             <img src={logo} width="200px" height="10px"/>
@@ -79,14 +77,14 @@ const Navbar = () => {
             <div
               role="menubar"
               className="
-              // transition
-              // ease-out
-              // duration-700
-              z-40
-              w-full
-              flex-col
-        lg:flex-row
-        gap-4
+        z-40
+        w-full
+        flex  
+        justify-between 
+        flex-col  
+        lg:flex-col
+        pt-24
+        gap-8
         absolute
         right-0
         left-0
@@ -97,7 +95,6 @@ const Navbar = () => {
         text-lg
         p-6
         items-center
-        lg:flex
         lg:static
         lg:shadow-none
         lg:justify-between
@@ -110,7 +107,7 @@ const Navbar = () => {
                 className="
         py-1
         px-6
-      dark:text-neutral-900
+        dark:text-neutral-900
         focus:outline-none
         focus-visible:ring-2
         ring-neutral-900
@@ -126,6 +123,8 @@ const Navbar = () => {
                 href="/"
                 role="menuitem"
                 className="
+             
+             
           py-1
           px-6
           dark:text-neutral-900
@@ -182,9 +181,10 @@ const Navbar = () => {
         transition-colors"
               >
                 Sign Up
-              </a>{" "}
+              </a>
             </div>
           ) : null}
+        
         </div>
       </nav>
     </>

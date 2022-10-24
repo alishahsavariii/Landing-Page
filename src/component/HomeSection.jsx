@@ -4,7 +4,7 @@ const HomeSection = () => {
   return (
     <section aria-labelledby="home" className="relative">
       <div className="flex flex-wrap-reverse gap-8 justify-center">
-        <div className="flex flex-wrap flex-col items-start lg:justify-center ">
+        <div className="flex gap-6 flex-wrap flex-col items-start lg:justify-center ">
           <div className="flex flex-wrap flex-col items-start gap-2">
             <h2 className="text-4xl font-bold">Relax, you are home!</h2>
             <p className="max-w-md">
@@ -22,7 +22,7 @@ const HomeSection = () => {
          mt-4
           flex
           gap-2
-          w-33
+          
           shadow-xl
           dark:text-neutral-900
           focus:outline-none
@@ -30,13 +30,13 @@ const HomeSection = () => {
         ring-neutral-900
         rounded-md
         ring-offset-4
-        ring-offset-tranparent
+        ring-offset-white
         text-neutral-900
         hover:text-neutral-500
      dark:ring-amber-400
      dark:ring-offset--neutral-800
         hover:shadow-none
-        transition-colors"
+        transition-shadow"
           >
             Sign Up
           </a>
@@ -62,13 +62,15 @@ const HomeSection = () => {
       <div
         className="
       bg-teal-900
-      h-24
+      h-48
       xl:h-48
       -mx-8
       mt-12
       xl:mt-0
       xl:absolute
-      lg:w-screen
+      w-screen
+      
+      left-8
       -bottom-8
       -z-10
  overflow-hidden"
