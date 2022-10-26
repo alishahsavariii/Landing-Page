@@ -43,6 +43,7 @@ sm:hidden
   text-neutral-900
   hover:text-white
   hover:bg-teal-900
+  hover:dark:text-neutral-100
   transition-colors"
         >
           Home
@@ -65,6 +66,7 @@ sm:hidden
   text-neutral-900
   hover:text-white
   hover:bg-teal-900
+  hover:dark:text-neutral-100
   transition-colors
   "
         >
@@ -86,6 +88,7 @@ sm:hidden
   text-neutral-900
   hover:text-white
   hover:bg-teal-900
+  hover:dark:text-neutral-100
   transition-colors"
         >
           Login
@@ -106,6 +109,7 @@ sm:hidden
   text-neutral-900
   hover:text-white
   hover:bg-teal-900
+  hover:dark:text-neutral-100
   transition-colors"
         >
           Sign Up

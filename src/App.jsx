@@ -5,15 +5,18 @@ import Card from "./component/Card";
 import HomeSection from "./component/HomeSection";
 import Form from "./component/Form";
 
+import { ThemeProvider } from "./component/ThemeContext";
+
 function App() {
   return (
     <>
-     
-      <Navbar />
-      <Header />
-      <Card />
-      <HomeSection />
-      <Form />
+   
+        <Navbar /> 
+        <Header />
+        <Card />
+        <HomeSection />
+        <Form />
+    
     </>
   );
 }

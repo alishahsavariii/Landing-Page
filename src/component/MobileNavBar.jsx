@@ -2,10 +2,10 @@ const MobilNavBar = (props) => {
     return (
         <div
         role="menubar"
-            className="
-            transition
-            ease-in-out
-            delay-1000
+        className="
+            transition-transform
+            translate-y-1.5
+     duration-1000
             opacity-95
             border-t-teal-900
             border-t-4
@@ -44,8 +44,9 @@ absolute
   ring-neutral-900
   rounded-md
   text-neutral-900
-  hover:text-white
+  hover:text-neutral-100
   hover:bg-teal-900
+  hover:dark:text-neutral-100
   transition-colors"
         >
           Home
@@ -67,8 +68,9 @@ absolute
   ring-offset-4
   ring-offset-amber-400
   text-neutral-900
-  hover:text-white
+  hover:text-neutral-100
   hover:bg-teal-900
+  hover:dark:text-neutral-100
   transition-colors
   "
         >
@@ -90,8 +92,9 @@ absolute
   ring-offset-4
   ring-offset-amber-400
   text-neutral-900
-  hover:text-white
+  hover:text-neutral-100
   hover:bg-teal-900
+  hover:dark:text-neutral-100
   transition-colors"
         >
           Login
@@ -112,8 +115,9 @@ absolute
   ring-offset-4
   ring-offset-amber-400
   text-neutral-900
-  hover:text-white
+  hover:text-neutral-100
   hover:bg-teal-900
+  hover:dark:text-neutral-100
   transition-colors"
         >
           Sign Up

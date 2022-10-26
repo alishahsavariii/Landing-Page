@@ -9,8 +9,14 @@ const Form = () => {
         className="container mx-auto px-8 overflow-hidden"
       >
         <div className="flex flex-wrap justify-center gap-12 md:gap-6 lg:gap-20 ">
-          <div className="md:flex-1 md:max-w-sm relative lg:pt-0 md:pt-2 xl:pt-8">
-            <img src={lamp} alt="lamp" className="mx-auto pt-0" />
+          <div className=" md:flex-1 md:max-w-sm relative lg:pt-0 md:pt-2 xl:pt-8">
+            <img src={lamp} alt="lamp" className="
+            rounded-md
+             dark:shadow-amber-500
+             
+            dark:border-none
+             mx-auto pt-0
+            " />
             <a
               href="#"
               className="
@@ -84,6 +90,7 @@ const Form = () => {
             shadow-xl
   border-8
   border-neutral-900
+  dark:border-teal-900
   p-6
   rounded-lg
   grid
@@ -98,7 +105,7 @@ const Form = () => {
   w-full
   "
           >
-            <h2 className="text-3xl font-bold mb-6">Let's Connect</h2>
+            <h2 className="text-3xl font-bold mb-6 dark:text-white">Let's Connect</h2>
             <div className="relative">
             <input
               type="text"
@@ -108,13 +115,15 @@ const Form = () => {
               w-full
               border-4
             border-amber-400
-              rounded-md 
-              focus:ring-2
+           
+              rounded-md
+              focus:ring-4
               dark:focus:ring-offset-2
-            focus:border-amber-400 
-              focus:outline-dotted
-            dark:bg-amber-400
-            dark:text-neutral-900 
+              focus:ring-amber-400
+              focus:border-amber-400
+              focus:outline-none
+              dark:bg-amber-400
+              dark:text-neutral-900
               placeholder-transparent "
               placeholder="Youre Name"
             />
@@ -154,13 +163,15 @@ const Form = () => {
               w-full
               border-4
             border-amber-400
-              rounded-md 
-              focus:ring-2
+           
+              rounded-md
+              focus:ring-4
               dark:focus:ring-offset-2
-            focus:border-amber-400
+              focus:ring-amber-400
+              focus:border-amber-400
               focus:outline-none
-            dark:bg-amber-400
-            dark:text-neutral-900 
+              dark:bg-amber-400
+              dark:text-neutral-900
               placeholder-transparent "
               placeholder="Youre Name"
             />

@@ -16,6 +16,7 @@ const Card = () => {
   return (
     <main
           className="
+         dark:text-neutral-200
       pt-16
         geid
         gap-12

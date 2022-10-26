@@ -41,7 +41,7 @@ const Header = () => {
 
         <img
           src={app}
-          className="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-52 md:65 lg:w-72 "
+          className="dark:shadow-amber-500 dark:shadow-lg dark:rounded-md row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-52 md:65 lg:w-72 "
           alt="app"
         />
       </div>

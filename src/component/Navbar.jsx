@@ -1,15 +1,14 @@
 import { useState } from "react";
 import "../index.css";
-import logo from "../assets/logo.svg"
+import logo from "../assets/logo.svg";
 import MobilNavBar from "./MobileNavBar";
 import MainNavBar from "./MainNavBar";
-
+import Toggle from "./toggle";
 
 const Navbar = () => {
   const [show, setShow] = useState(null);
 
-  const closeMenu = () => setShow(false)
-  
+  const closeMenu = () => setShow(false);
 
   return (
     <>
@@ -26,6 +25,7 @@ const Navbar = () => {
             justify-between
             "
         >
+          <Toggle />  
           <a
             href="/"
             aria-label="Go to homepage"
@@ -45,17 +45,20 @@ const Navbar = () => {
         transition-opacity
         "
           >
-            <img src={logo} width="200px" className="w-36 md:w-64 lg:w-72"/>
-          
+            <img src={logo} width="200px" className="w-36 md:w-64 lg:w-72" />
+         
           </a>
 
           <button
-            onClick={() => { setShow(!show)}}
+            onClick={() => {
+              setShow(!show);
+            }}
             className="
+          
         lg:hidden
         hover:-translate-y-1
          hover:scale-110
-         transition ease-in-out delay-25
+       transition-all
         focus:outline-none
         focus-visible:ring-2
         ring-neutral-900
@@ -64,6 +67,7 @@ const Navbar = () => {
         ring-offset-amber-400
         text-neutral-900
         hover:text-neutral-500
+        
         
         "
           >
@@ -82,15 +86,13 @@ const Navbar = () => {
               />
             </svg>
           </button>
-<MainNavBar />
+          <MainNavBar />
           {show && <MobilNavBar isMobile={true} closeMenu={closeMenu} />}
-        
         </div>
       </nav>
   
     </>
-);
-  
+  );
 };
 
 export default Navbar;
