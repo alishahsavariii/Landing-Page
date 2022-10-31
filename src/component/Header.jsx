@@ -8,7 +8,9 @@ const Header = () => {
     relative
      pt-16
      md:pt-24
-      lg:pt-48"
+      lg:pt-48
+      
+      "
     >
       <div
         className="
@@ -20,7 +22,11 @@ const Header = () => {
       -z-10
       bg-gradient-to-b
       from-amber-400
-      to-amber-600"
+      to-amber-600
+      dark:bg-gradient-to-b
+      dark:from-amber-600
+      dark:to-amber-900
+      "
       ></div>
       <div
         className="

@@ -3,16 +3,15 @@ const MobilNavBar = (props) => {
         <div
         role="menubar"
         className="
-            transition-transform
-            translate-y-1.5
-     duration-1000
+
             opacity-95
+            dark:opacity-100
             border-t-teal-900
+            dark:border-neutral-100
             border-t-4
         py-64
       lg:hidden
   z-10
-  w-full
   h-64
   flex  
   justify-between
@@ -24,6 +23,7 @@ absolute
   left-0
   top-16
   bg-amber-400
+  dark:bg-neutral-800
   shadow-xl
   text-center
   text-lg
@@ -38,7 +38,7 @@ absolute
           className="
           px-4
           py-1
-  dark:text-neutral-900
+ 
   focus:outline-none
   focus-visible:ring-2
   ring-neutral-900
@@ -47,7 +47,10 @@ absolute
   hover:text-neutral-100
   hover:bg-teal-900
   hover:dark:text-neutral-100
-  transition-colors"
+  transition-colors
+  dark:text-neutral-100
+  "
+
         >
           Home
         </a>
@@ -60,7 +63,7 @@ absolute
        px-4
        py-1
  
-    dark:text-neutral-900
+    
     focus:outline-none
   focus-visible:ring-2
   ring-neutral-900
@@ -71,7 +74,10 @@ absolute
   hover:text-neutral-100
   hover:bg-teal-900
   hover:dark:text-neutral-100
-  transition-colors
+  transition-color
+  dark:text-neutral-100
+  s
+
   "
         >
           Contact
@@ -84,7 +90,7 @@ absolute
           px-4
           py-1
     
-    dark:text-neutral-900
+    
     focus:outline-none
   focus-visible:ring-2
   ring-neutral-900
@@ -95,7 +101,10 @@ absolute
   hover:text-neutral-100
   hover:bg-teal-900
   hover:dark:text-neutral-100
-  transition-colors"
+  transition-colors
+  dark:text-neutral-100
+  "
+
         >
           Login
         </a>
@@ -107,7 +116,7 @@ absolute
           px-4
           py-1
         
-    dark:text-neutral-900
+    
     focus:outline-none
   focus-visible:ring-2
   ring-neutral-900
@@ -118,7 +127,10 @@ absolute
   hover:text-neutral-100
   hover:bg-teal-900
   hover:dark:text-neutral-100
-  transition-colors"
+  transition-colors
+  dark:text-neutral-100
+  "
+
         >
           Sign Up
         </a>

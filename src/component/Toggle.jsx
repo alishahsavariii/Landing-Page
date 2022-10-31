@@ -10,9 +10,9 @@ const Toggle = () => {
         {theme === "dark" ? (
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className=" px-4
+            className=" px-8
             py-1
-      
+
          dark:text-neutral-900
          focus:outline-none
        focus-visible:ring-2

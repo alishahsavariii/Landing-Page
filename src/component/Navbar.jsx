@@ -12,14 +12,14 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="mx-auto p-4 bg-amber-400 w-full">
+   
         <div
-          className="
+        className="
+          bg-amber-400
           lg:border-b-4
           border-teal-800
-          w-full
-            container
-            mx-auto
+          dark:bg-gradient-to-b dark:from-amber-300 dark:to-amber-600
+      
             flex
             item-center
             justify-between
@@ -45,7 +45,7 @@ const Navbar = () => {
         transition-opacity
         "
           >
-            <img src={logo} width="200px" className="w-36 md:w-64 lg:w-72" />
+            <img src={logo} width="200px" className="dark:neutral-100 w-36 md:w-64 lg:w-72" />
          
           </a>
 
@@ -54,11 +54,12 @@ const Navbar = () => {
               setShow(!show);
             }}
             className="
-          
+  
         lg:hidden
         hover:-translate-y-1
          hover:scale-110
        transition-all
+       duration-300
         focus:outline-none
         focus-visible:ring-2
         ring-neutral-900
@@ -77,7 +78,7 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="w-8 h-8"
+              class="w-8 h-8  "
             >
               <path
                 stroke-linecap="round"
@@ -89,7 +90,7 @@ const Navbar = () => {
           <MainNavBar />
           {show && <MobilNavBar isMobile={true} closeMenu={closeMenu} />}
         </div>
-      </nav>
+      
   
     </>
   );
