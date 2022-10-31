@@ -13,7 +13,7 @@ const Toggle = () => {
             className="
              px-4
             py-1
-bg-purple-900
+
          dark:text-neutral-900
          focus:outline-none
        focus-visible:ring-2
