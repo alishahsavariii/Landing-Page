@@ -21,7 +21,7 @@ const Navbar = () => {
           dark:bg-gradient-to-b dark:from-amber-300 dark:to-amber-600
       
             flex
-            item-center
+       
             justify-between
             "
         >
