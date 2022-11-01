@@ -2,7 +2,8 @@ const MainNavBar =() => {
     return (
         <div
         role="menubar"
-            className="
+        className="
+            
             dark:bg-gradient-to-b dark:from-amber-300 dark:to-amber-600
         hidden
 lg:flex
@@ -15,7 +16,7 @@ sm:hidden
   pt-8
   
   gap-8
-  absolute
+
   right-0
   left-0
   top-8
@@ -25,8 +26,6 @@ sm:hidden
   text-lg
   p-8
   items-center
-  lg:sticky
-  
   lg:shadow-none
   lg:w-full
   "

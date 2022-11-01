@@ -15,14 +15,16 @@ const Navbar = () => {
    
         <div
         className="
+        fixed
           bg-amber-400
           lg:border-b-4
           border-teal-800
           dark:bg-gradient-to-b dark:from-amber-300 dark:to-amber-600
-      
+      w-full
             flex
-       
+       z-50
             justify-between
+            h-22
             "
         >
           <Toggle />  
