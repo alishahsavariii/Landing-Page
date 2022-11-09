@@ -48,6 +48,7 @@ const Navbar = () => {
         "
           >
             <img src={logo} width="200px" className="dark:neutral-100 w-36 md:w-64 lg:w-72" />
+            dflvhdfhgi
          
           </a>
 
